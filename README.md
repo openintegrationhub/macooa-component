@@ -13,7 +13,7 @@ Generated at: 2021-05-18T13:46:09+02:00
 
 ## Authorization
 
-This API does not require authorization.
+API Token
 
 ## Actions
 
