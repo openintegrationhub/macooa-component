@@ -1,0 +1,260 @@
+{
+  "title": "Swagger macooa",
+  "description": "This is the swagger.json for the macooa REST API. at [https://www.macooa.com/restapi/v1]",
+  "docsUrl": "http://swagger.io",
+  "url": "https://macooa.com/restapi/v1",
+  "envVars": {},
+  "credentials": {
+    "fields": {
+      "server": {
+        "label": "Server",
+        "viewClass": "SelectView",
+        "model": [
+          "https://macooa.com/restapi/v1",
+          "http://macooa.com/restapi/v1",
+          "--- Custom URL"
+        ],
+        "required": true
+      },
+      "otherServer": {
+        "label": "Custom Server URL",
+        "viewClass": "TextFieldView"
+      }
+    }
+  },
+  "triggers": {
+    "startFlow": {
+      "main": "./lib/triggers/startFlow.js",
+      "type": "polling",
+      "title": "Start Flow",
+      "fields": {}
+    }
+  },
+  "actions": {
+    "post_person_": {
+      "main": "./lib/actions/post_person_.js",
+      "title": "create a new person for given tenant",
+      "description": "create a new person for given tenant",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/post_person_.in.json",
+        "out": "./lib/schemas/post_person_.out.json"
+      }
+    },
+    "put_person_": {
+      "main": "./lib/actions/put_person_.js",
+      "title": "update an existing person",
+      "description": "update an existing person",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/put_person_.in.json",
+        "out": "./lib/schemas/put_person_.out.json"
+      }
+    },
+    "getPersonById": {
+      "main": "./lib/actions/getPersonById.js",
+      "title": "Find person by Id",
+      "description": "Returns a single person",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/getPersonById.in.json",
+        "out": "./lib/schemas/getPersonById.out.json"
+      }
+    },
+    "post_organisation_": {
+      "main": "./lib/actions/post_organisation_.js",
+      "title": "create a new organisation for given tenant",
+      "description": "create a new organisation for given tenant",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/post_organisation_.in.json",
+        "out": "./lib/schemas/post_organisation_.out.json"
+      }
+    },
+    "put_organisation_": {
+      "main": "./lib/actions/put_organisation_.js",
+      "title": "update an existing organisation",
+      "description": "update an existing organisation",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/put_organisation_.in.json",
+        "out": "./lib/schemas/put_organisation_.out.json"
+      }
+    },
+    "getOrganisationById": {
+      "main": "./lib/actions/getOrganisationById.js",
+      "title": "Find organisation by Id",
+      "description": "Returns a single organisation",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/getOrganisationById.in.json",
+        "out": "./lib/schemas/getOrganisationById.out.json"
+      }
+    },
+    "post_contact_": {
+      "main": "./lib/actions/post_contact_.js",
+      "title": "create a new contact assigned to an organisation",
+      "description": "create a contact assigned to an organisation",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/post_contact_.in.json",
+        "out": "./lib/schemas/post_contact_.out.json"
+      }
+    },
+    "put_contact_": {
+      "main": "./lib/actions/put_contact_.js",
+      "title": "update an existing contact",
+      "description": "update an existing contact",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/put_contact_.in.json",
+        "out": "./lib/schemas/put_contact_.out.json"
+      }
+    },
+    "getContactById": {
+      "main": "./lib/actions/getContactById.js",
+      "title": "Find contact by Id",
+      "description": "Returns a single contact",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/getContactById.in.json",
+        "out": "./lib/schemas/getContactById.out.json"
+      }
+    },
+    "post_address_": {
+      "main": "./lib/actions/post_address_.js",
+      "title": "create a new address assigned to an organisation or person",
+      "description": "create a contact assigned to an organisation or person",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/post_address_.in.json",
+        "out": "./lib/schemas/post_address_.out.json"
+      }
+    },
+    "put_address_": {
+      "main": "./lib/actions/put_address_.js",
+      "title": "update an existing address",
+      "description": "update an existing address",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/put_address_.in.json",
+        "out": "./lib/schemas/put_address_.out.json"
+      }
+    },
+    "getAddressById": {
+      "main": "./lib/actions/getAddressById.js",
+      "title": "Find address by Id",
+      "description": "Returns a single address",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/getAddressById.in.json",
+        "out": "./lib/schemas/getAddressById.out.json"
+      }
+    },
+    "post_contactdata_": {
+      "main": "./lib/actions/post_contactdata_.js",
+      "title": "create new contactdata assigned to a contact or person",
+      "description": "create a contactdata assigned to a contact or person",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/post_contactdata_.in.json",
+        "out": "./lib/schemas/post_contactdata_.out.json"
+      }
+    },
+    "put_contactdata_": {
+      "main": "./lib/actions/put_contactdata_.js",
+      "title": "update existing contactdata",
+      "description": "update existing contactdata",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/put_contactdata_.in.json",
+        "out": "./lib/schemas/put_contactdata_.out.json"
+      }
+    },
+    "getContactdataById": {
+      "main": "./lib/actions/getContactdataById.js",
+      "title": "Find contactdata by Id",
+      "description": "Returns contactdata",
+      "fields": {
+        "verbose": {
+          "viewClass": "CheckBoxView",
+          "label": "Debug this step (log more data)"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/getContactdataById.in.json",
+        "out": "./lib/schemas/getContactdataById.out.json"
+      }
+    }
+  }
+}

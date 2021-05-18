@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "contactId": {
+                    "type": "string",
+                    "format": "alphanumeric24"
+                },
+                "organisationId": {
+                    "type": "string",
+                    "format": "alphanumeric24"
+                },
+                "firstname": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "lastname": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "userFunction": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "notes": {
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        }
+    }
+}

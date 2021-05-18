@@ -1,0 +1,42 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "addressId": {
+                    "type": "string",
+                    "format": "alphanumeric24"
+                },
+                "organisationId": {
+                    "type": "string",
+                    "format": "alphanumeric24"
+                },
+                "personId": {
+                    "type": "string",
+                    "format": "alphanumeric24"
+                },
+                "street": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "streetNumber": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "zipCode": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "city": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "countryCode": {
+                    "type": "string",
+                    "format": "string2"
+                }
+            }
+        }
+    }
+}

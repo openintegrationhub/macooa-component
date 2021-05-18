@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "personId": {
+            "type": "string",
+            "format": "alphanumeric24"
+        },
+        "firstname": {
+            "type": "string",
+            "format": "string"
+        },
+        "lastname": {
+            "type": "string",
+            "format": "string"
+        },
+        "category": {
+            "type": "string",
+            "format": "string",
+            "enum": [
+                "Lieferant",
+                "Partner",
+                "Kunde",
+                "Kooperation"
+            ],
+            "default": "Kunde"
+        },
+        "industry": {
+            "type": "string",
+            "format": "string"
+        },
+        "notes": {
+            "type": "string",
+            "format": "string"
+        }
+    }
+}

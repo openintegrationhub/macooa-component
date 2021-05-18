@@ -1,0 +1,161 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "contactdataId": {
+                    "type": "string",
+                    "format": "alphanumeric24"
+                },
+                "contactId": {
+                    "type": "string",
+                    "format": "alphanumeric24"
+                },
+                "personId": {
+                    "type": "string",
+                    "format": "alphanumeric24"
+                },
+                "type1": {
+                    "type": "string",
+                    "default": "email"
+                },
+                "label1": {
+                    "type": "string",
+                    "description": "label",
+                    "enum": [
+                        "work",
+                        "private",
+                        "other"
+                    ]
+                },
+                "value1": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "type2": {
+                    "type": "string",
+                    "default": "email"
+                },
+                "label2": {
+                    "type": "string",
+                    "description": "label",
+                    "enum": [
+                        "work",
+                        "private",
+                        "other"
+                    ]
+                },
+                "value2": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "type3": {
+                    "type": "string",
+                    "default": "email"
+                },
+                "label3": {
+                    "type": "string",
+                    "description": "label",
+                    "enum": [
+                        "work",
+                        "private",
+                        "other"
+                    ]
+                },
+                "value3": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "type4": {
+                    "type": "string",
+                    "default": "phone"
+                },
+                "label4": {
+                    "type": "string",
+                    "description": "label",
+                    "enum": [
+                        "work",
+                        "home",
+                        "cell",
+                        "other"
+                    ]
+                },
+                "value4": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "type5": {
+                    "type": "string",
+                    "default": "phone"
+                },
+                "label5": {
+                    "type": "string",
+                    "description": "label",
+                    "enum": [
+                        "work",
+                        "home",
+                        "cell",
+                        "other"
+                    ]
+                },
+                "value5": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "type6": {
+                    "type": "string",
+                    "default": "phone"
+                },
+                "label6": {
+                    "type": "string",
+                    "description": "label",
+                    "enum": [
+                        "work",
+                        "home",
+                        "cell",
+                        "other"
+                    ]
+                },
+                "value6": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "type7": {
+                    "type": "string",
+                    "default": "social media"
+                },
+                "label7": {
+                    "type": "string",
+                    "description": "label",
+                    "enum": [
+                        "LinkedIn",
+                        "Xing",
+                        "other"
+                    ]
+                },
+                "value7": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "type8": {
+                    "type": "string",
+                    "default": "social media"
+                },
+                "label8": {
+                    "type": "string",
+                    "description": "label",
+                    "enum": [
+                        "LinkedIn",
+                        "Xing",
+                        "other"
+                    ]
+                },
+                "value8": {
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        }
+    }
+}
